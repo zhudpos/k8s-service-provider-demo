@@ -1,11 +1,11 @@
 spring:
   profiles:
-    active: local
+    active: dev
   application:
     name: service-provider
   cloud:
     kubernetes:
-      enabled: false
+      enabled: true
       reload:
         enabled: true
       config:
