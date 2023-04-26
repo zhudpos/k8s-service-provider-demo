@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: local
+  application:
+    name: service-provider
+  cloud:
+    kubernetes:
+      enabled: false
+      reload:
+        enabled: true
+      config:
+        sources:
+          - namespace: spring-cloud-service
+            name: k8s-spring-cloud-service-provider-config
